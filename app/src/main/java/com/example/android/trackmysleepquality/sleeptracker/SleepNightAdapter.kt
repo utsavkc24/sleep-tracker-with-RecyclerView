@@ -26,7 +26,6 @@ import com.example.android.trackmysleepquality.databinding.ListItemSleepNightBin
 
 class SleepNightAdapter(val clickListener: SleepNightListener) : ListAdapter<SleepNight, SleepNightAdapter.ViewHolder>(SleepNightDiffCallBack()) {
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = getItem(position)
         holder.bind(clickListener, getItem(position)!!)
     }
 
